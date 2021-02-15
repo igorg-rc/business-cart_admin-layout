@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="1.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body class="has-fixed-sidenav">
+    <header>
+      <div class="navbar-fixed">
+        <nav class="navbar teal darken-3">
+          <div class="nav-wrapper">
+            <!-- <a href="#!" class="brand-logo grey-text text-darken-4">Home</a> -->
+            <ul id="nav-mobile" class="right">
+              <li class="hide-on-med-and-down"><a href="#!" data-target="dropdown1" class="dropdown-trigger waves-effect"><i class="material-icons">notifications</i></a></li>
+              <li><a href="#!" data-target="chat-dropdown" class="dropdown-trigger waves-effect"><i class="material-icons">settings</i></a></li>
+              <li><a href="#!" data-target="chat-dropdown" class="dropdown-trigger waves-effect"><i class="material-icons">logout</i></a></li>
+            </ul><a href="#!" data-target="sidenav-left" class="sidenav-trigger left"><i class="material-icons white-text">menu</i></a>
+          </div>
+        </nav>
+      </div>
+      <ul id="sidenav-left" class="sidenav sidenav-fixed teal darken-3 darken-3 white-text">
+        <div class="valign-wrapper">
+          <img src="img/index1_square_white_96.png" style="width: 30px; height:100%; margin: 10px 25px 0 15px" />
+          <h4>Admin panel</h4>
+        </div>
+        <li class="no-padding">
+          <ul class="collapsible collapsible-accordion sidemenu">
+            <li class="bold waves-effect"><a class="collapsible-header white-text">Site blocks
+              <i class=" white-text material-icons chevron">chevron_left</i></a>
+              <div class="collapsible-body teal darken-3">
+                <ul>
+                  <li><a href="/pages/admin-dashboard" class="waves-effect white-text active">Helloscreen<i class="material-icons white-text">monitor</i></a></li>
+                  <li><a href="/pages/admin-fixed-chart" class="waves-effect white-text">Technologies<i class="material-icons white-text">build</i></a></li>
+                  <li><a href="/pages/admin-grid" class="waves-effect white-text">Industries<i class="material-icons white-text">cases</i></a></li>
+                  <li><a href="/pages/admin-chat" class="waves-effect white-text">Footer<i class="material-icons white-text">copyright</i></a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="bold waves-effect"><a class="collapsible-header white-text">Messages<i class="white-text material-icons">chevron_left</i></a>
+              <div class="collapsible-body teal darken-3">
+                <ul>
+                  <li><a href="/pages/admin-line-charts" class="waves-effect white-text">Income<i class="material-icons white-text">email</i></a></li>
+                  <!-- <li><a href="/pages/admin-bar-charts" class="waves-effect white-text">Bar Charts<i class="material-icons white-text">equalizer</i></a></li>
+                  <li><a href="/pages/admin-area-charts" class="waves-effect white-text">Area Charts<i class="material-icons white-text">multiline_chart</i></a></li>
+                  <li><a href="/pages/admin-doughnut-charts" class="waves-effect white-text">Doughnut Charts<i class="material-icons white-text">pie_chart</i></a></li>
+                  <li><a href="/pages/admin-financial-charts" class="waves-effect white-text">Financial Charts<i class="material-icons white-text">euro_symbol</i></a></li> -->
+                </ul>
+              </div>
+            </li>
+      </ul>
+
+      <div id="dropdown1" class="dropdown-content notifications">
+        <div class="notifications-title">notifications</div>
+        <div class="card">
+          <div class="card-content"><span class="card-title">Joe Smith made a purchase</span>
+            <p>Content</p>
+          </div>
+          <div class="card-action"><a href="#!">view</a><a href="#!">dismiss</a></div>
+        </div>
+        <div class="card">
+          <div class="card-content"><span class="card-title">Daily Traffic Update</span>
+            <p>Content</p>
+          </div>
+          <div class="card-action"><a href="#!">view</a><a href="#!">dismiss</a></div>
+        </div>
+        <div class="card">
+          <div class="card-content"><span class="card-title">New User Joined</span>
+            <p>Content</p>
+          </div>
+          <div class="card-action"><a href="#!">view</a><a href="#!">dismiss</a></div>
+        </div>
+      </div>
+      <div id="chat-dropdown" class="dropdown-content dropdown-tabbed">
+        <ul class="tabs tabs-fixed-width">
+          <li class="tab col s3"><a href="#settings">Settings</a></li>
+          <li class="tab col s3"><a href="#friends" class="active">Friends</a></li>
+        </ul>
+        <div id="settings" class="col s12">
+          <div class="settings-group">
+            <div class="setting">Night Mode
+              <div class="switch right">
+                <label>
+                  <input type="checkbox"><span class="lever"></span>
+                </label>
+              </div>
+            </div>
+            <div class="setting">Beta Testing
+              <label class="right">
+                <input type="checkbox"><span></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div id="friends" class="col s12">
+          <ul class="collection flush">
+            <li class="collection-item avatar">
+              <div class="badged-circle online"><img src="//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/portrait1.jpg?v=1218798423999129079" alt="avatar" class="circle"></div><span class="title">Jane Doe</span>
+              <p class="truncate">Lo-fi you probably haven't heard of them</p>
+            </li>
+            <li class="collection-item avatar">
+              <div class="badged-circle"><img src="//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/portrait2.jpg?v=15342908036415923195" alt="avatar" class="circle"></div><span class="title">John Chang</span>
+              <p class="truncate">etsy leggings raclette kickstarter four dollar toast</p>
+            </li>
+            <li class="collection-item avatar">
+              <div class="badged-circle"><img src="//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/portrait3.jpg?v=4679613373594475586" alt="avatar" class="circle"></div><span class="title">Lisa Simpson</span>
+              <p class="truncate">Raw denim fingerstache food truck chia health goth synth</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- Main section - content -->
+    <!-- <main>
+      <div class="container">
+        <h2 class="center-align">Dashboard</h2>
+        
+        <div id="pages" class="teal darken-1">
+          <h3 class="center-align">Helloscreen</h3>
+          <div class="row">
+            <div class="col s12">
+              
+            </div>
+          </div>
+        </div>
+
+        <div id="pages" class="teal darken-1">
+          <h3 class="center-align">Technologies</h3>
+          <div class="row">
+            <div class="col s12">
+              
+            </div>
+          </div>
+        </div>
+
+        <div id="pages" class="teal darken-1">
+          <div style="padding: 1vh 0;">
+            <h3 class="center-align white-text">Industries</h3>
+            <div class="row">
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s6">
+                    <input id="name" type="text" class="validate">
+                    <label for="name">Name</label>
+                  </div>
+                  <div class="input-field col s12 m6">
+                    <div class="input-field white-text">
+                      <input type="text" id="name" class="white-text" />
+                      <label for="title" class="white-text">Title</label>
+                    </div>
+                  </div>
+                  <div class="input-field col s6">
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Go!
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+    </main> -->
+
+    <main>
+      <div class="container">
+        <h1 class="center-align">Technologies</h1>
+        <div class="row">
+          <div class="col s12 m6 l6">
+            <div class="card blue-grey lighten-4">
+              <div class="card-content black-text">
+                <span class="card-title center-align">Frontend</span>
+                <table>
+                  <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Image</th>
+                    </tr>
+                  </thead>
+          
+                  <tbody>
+                    <tr>
+                      <td>React</td>
+                      <td><img src="img/icons/tech/frontend/react.png" /></td>
+                    </tr>
+                    <tr>
+                      <td>Javascript</td>
+                      <td><img src="img/icons/tech/frontend/javascript.png" /></td>
+                    </tr>
+                    <tr>
+                      <td>HTML5</td>
+                      <td><img src="img/icons/tech/frontend/html5.png" /></td>
+                    </tr>
+                    <tr>
+                      <td>Extension</td>
+                      <td><img src="img/icons/tech/frontend/chrome_.png" /></td>
+                    </tr>
+                    <tr>
+                      <td>Bootstrap</td>
+                      <td><img src="img/icons/tech/frontend/bootstrap.png" /></td>
+                    </tr>
+                    <tr>
+                      <td>jQuery</td>
+                      <td><img src="img/icons/tech/frontend/jquery.png" /></td>
+                    </tr>
+                    <tr>
+                      <td>Material UI</td>
+                      <td><img src="img/icons/tech/frontend/materialui.png" /></td>
+                    </tr>
+                    <tr>
+                      <td>Extension</td>
+                      <td><img src="img/icons/tech/frontend/firefox.png" /></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="card-action center-align">
+                <button class="btn green" href="">Edit</button>
+                <button class="btn red modal-trigger" href="#modal1">Delete</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l6">
+            <div class="card blue-grey lighten-4">
+              <div class="card-content black-text">
+                <span class="card-title center-align">Backend</span>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Title</th>
+                      <th>Image</th>
+                    </tr>
+                  </thead>
+          
+                  <tbody>
+                    <tr>
+                      <td>Python</td>
+                      <td><img src="img/icons/tech/backend/python.png" /></td>
+                    </tr>
+                    <tr>
+                      <td>Node js</td>
+                      <td><img src="img/icons/tech/backend/node-js.png" /></td>
+                    </tr>
+                    <tr>
+                      <td>Express js</td>
+                      <td><img src="img/icons/tech/backend/express_js.png" /></td>
+                    </tr>
+                    <tr>
+                      <td>Mongo DB</td>
+                      <td><img src="img/icons/tech/backend/mongodb.png" /></td>
+                    </tr>
+                    <tr>
+                      <td>MySQL</td>
+                      <td><img src="img/icons/tech/backend/mysql_.png" /></td>
+                    </tr>
+                    <tr>
+                      <td>Sqlite</td>
+                      <td><img src="img/icons/tech/backend/sqlite.png" /></td>
+                    </tr>
+                    <tr>
+                      <td>PostgreSQL</td>
+                      <td><img src="img/icons/tech/backend/postgresql.png" /></td>
+                    </tr>
+                    <tr>
+                      <td>GraphQL</td>
+                      <td><img src="img/icons/tech/backend/graphql.png" /></td>
+                    </tr>
+                  </tbody>
+                    
+                </table>
+              </div>
+              <div class="card-action center-align">
+                <button class="btn green" href="#">Edit</button>
+                <button class="btn red modal-trigger" href="#modal1">Delete</button>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col s12 m6 l6">
+            <div class="card blue-grey lighten-4">
+              <div class="card-content black-text">
+                <span class="card-title center-align">Tools</span>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Title</th>
+                      <th>Image</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Skack</td>
+                      <td><img src="img/icons/tech/tools/slack.png" /></td>
+                    </tr>
+                    <tr>
+                      <td>NPM</td>
+                      <td><img src="img/icons/tech/tools/npm_.png" /></td>
+                    </tr>
+                    <tr>
+                      <td>Github</td>
+                      <td><img src="img/icons/tech/tools/github.png" /></td>
+                    </tr>
+                    <tr>
+                      <td>Docker</td>
+                      <td><img src="img/icons/tech/tools/docker.png" /></td>
+                    </tr>
+                    <tr>
+                      <td>AWS</td>
+                      <td><img src="img/icons/tech/tools/aws.png" /></td>
+                    </tr>
+                    <tr>
+                      <td>Trello</td>
+                      <td><img src="img/icons/tech/tools/trello.png" /></td>
+                    </tr>
+                    <tr>
+                      <td>Jira</td>
+                      <td><img src="img/icons/tech/tools/jira.png" /></td>
+                    </tr>
+                    <tr>
+                      <td>Webpack</td>
+                      <td><img src="img/icons/tech/tools/webpack.png" /></td>
+                    </tr>
+                  </tbody>
+                    
+                </table>
+              </div>
+              <div class="card-action center-align">
+                <button class="btn green" href="#">Edit</button>
+                <button class="btn red modal-trigger" href="#modal1">Delete</button>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="col s12 m6 l6">
+            <div class="card blue-grey lighten-4">
+              <div class="card-content black-text">
+                <span class="card-title center-align">API</span>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Title</th>
+                      <th>Image</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Stripe</td>
+                      <td><img src="img/icons/tech/api/stripe.png" /></td>
+                    </tr>
+                    <tr>
+                      <td>Twitter</td>
+                      <td><img src="img/icons/tech/api/twitter.png" /></td>
+                    </tr>
+                    <tr>
+                      <td>Paypal</td>
+                      <td><img src="img/icons/tech/api/paypal_.png" /></td>
+                    </tr>
+                    <tr>
+                      <td>Linkedin</td>
+                      <td><img src="img/icons/tech/api/linkedin.png" /></td>
+                    </tr>
+                    <tr>
+                      <td>Google</td>
+                      <td><img src="img/icons/tech/api/google.png" /></td>
+                    </tr>
+                    <tr>
+                      <td>Instagram</td>
+                      <td><img src="img/icons/tech/api/instagram.png" /></td>
+                    </tr>
+                    <tr>
+                      <td>Facebook</td>
+                      <td><img src="img/icons/tech/api/facebook.png" /></td>
+                    </tr>
+                    <tr>
+                      <td>Google maps</td>
+                      <td><img src="img/icons/tech/api/gmaps.png" /></td>
+                    </tr>
+                  </tbody>
+                    
+                </table>
+              </div>
+              <div class="card-action center-align">
+                <button class="btn green" href="#">Edit</button>
+                <button class="btn red modal-trigger" href="#modal1">Delete</button>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!------------- Modals --------------->
+          
+          <!-- Modal of deleting the category -->
+          <div id="modal1" class="modal">
+            <div class="modal-content">
+              <h4>Delete this category. Are you sure?</h4>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="waves-effect btn-flat modal-close blue white-text center-align">No, cancel deleting</a>
+              <a href="#!" class="waves-effect btn-flat modal-close red white-text center-align">Yes, delete</a>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </main>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+/* =========================================== Admin theme settings ============================================== */
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+.sidemenu {
+  display: inline-block !important;
+}
+
+/* =========================================== Block forms settings ============================================== */
+/* File input */
+.inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.inputfile + label {
+  padding: 0.5rem 1rem;
+  font-size: 1.25em;
+  font-weight: 700;
+  color: white;
+  background-color: #00897b;
+  border: 1px solid white;
+  display: inline-block;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+  background-color: white;
+  color: #00897b;
+  border: 1px solid #80cbc4;
+}
+
+.inputfile + label {
+  cursor: pointer; /* "hand" cursor */
+}
+
+.inputfile:focus + label {
+  outline: 1px dotted #000;
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
+/* Save button */
+.save-button {
+  padding: 0.5rem 1rem;
+  font-size: 1.25em;
+  /* font-weight: 700; */
+  color: white;
+  background-color: #00897b;
+  border: 1px solid white;
+  display: inline-block;
+}
+
+.save-button:hover {
+  background-color: white;
+  color: #00897b;
+  border: 1px solid #80cbc4;
+}
+
+/* ========= Card content ==================== */
+table img {
+  height: 30px;
+}
+
+
+/* ======== Modal content ========== */
+.modal-footer, .modal-content h4 {
+	text-align: center !important;
+}
+.modal-footer a {
+	display:inline-block;
+	margin:0 15px;
+	float:none; /*if you set float already */
+}
+
+/* === Sidenav overlapping fixing === */
+header, main, footer {
+  padding-left: 240px;
+}
+
+header {
+  display: block;
+} 
+
+@media only screen and (max-width : 992px) {
+  header, main, footer{
+    padding-left: 0;
+  }
+
+  
+}
